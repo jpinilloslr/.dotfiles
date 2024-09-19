@@ -21,5 +21,7 @@ sudo dnf install stow
 ```bash
 git clone git@github.com:jpinilloslr/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-stow -t ~ *
+stow alacritty
+stow nvim
+stow tmux
 ```

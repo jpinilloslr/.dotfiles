@@ -1,0 +1,5 @@
+[user]
+    name = joaquin
+    email = jpinilloslr@gmail.com
+[core]
+    editor = nvim
