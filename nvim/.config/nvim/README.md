@@ -4,7 +4,7 @@
 
 ```bash
 rm -rf ~/.local/nvim
-rm /usr/local/bin/nvim
+sudo rm /usr/local/bin/nvim
 ```
 
 ## Remove previous data and cache
@@ -25,13 +25,13 @@ rm ./nvim-linux64.tar.gz
 mkdir -p ~/.local
 mkdir -p ~/.config
 mv ./nvim-linux64 ~/.local/nvim
-ln -s ~/.local/nvim/bin/nvim /usr/local/bin/nvim
+sudo ln -s ~/.local/nvim/bin/nvim /usr/local/bin/nvim
 ```
 
 ## Install config
 
 ```bash
-git clone git@github.com:jpinilloslr/nvim_config.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+stow nvim
 ```
 
 ## Additional tools
