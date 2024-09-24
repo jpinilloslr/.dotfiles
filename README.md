@@ -117,7 +117,7 @@ stow tmux
 Install TPM
 
 ```
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 ```
 
 Open Tmux and press Ctr+A I to install all plugins.
