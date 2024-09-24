@@ -19,7 +19,7 @@ sudo dnf install stow
 ## Clone Repository
 
 ```bash
-git clone git@github.com:jpinilloslr/dotfiles.git ~/.dotfiles
+git clone git@github.com:jpinilloslr/.dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
 
