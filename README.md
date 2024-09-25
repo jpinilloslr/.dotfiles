@@ -23,6 +23,12 @@ git clone --recurse-submodules git@github.com:jpinilloslr/.dotfiles.git ~/.dotfi
 cd ~/.dotfiles
 ```
 
+## Install Bash Config
+
+```bash
+stow bash
+```
+
 ## Install Alacritty Config
 
 ```bash
