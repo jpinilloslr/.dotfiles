@@ -12,7 +12,7 @@ if not vim.loop.fs_stat(lazypath) then
     '--branch=stable',
     lazypath,
   })
-  vim.fn.system({'git', '-C', lazypath, 'checkout', '460e1cd'})
+  vim.fn.system({'git', '-C', lazypath, 'checkout', '56ead98'})
 end
 vim.opt.rtp:prepend(lazypath)
 
