@@ -1,14 +1,14 @@
 return {
   'tpope/vim-dadbod',
-  commit = '7888cb7',
+  commit = 'fe5a55e',
   dependencies = {
     {
       'kristijanhusak/vim-dadbod-ui',
-      commit = 'a5ff8bd',
+      commit = '28a1690',
     },
     {
       'kristijanhusak/vim-dadbod-completion',
-      commit = '880f7e9',
+      commit = 'da0e75c',
     }
   },
 }

@@ -1,4 +1,4 @@
 return {
   'stevearc/dressing.nvim',
-  commit = 'c5775a8'
+  commit = 'fc78a3c'
 }

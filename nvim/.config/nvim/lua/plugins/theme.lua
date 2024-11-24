@@ -1,6 +1,6 @@
 return {
   'folke/tokyonight.nvim',
-  tag = 'v4.8.0',
+  tag = 'v4.10.0',
   lazy = false,
   priority = 1000,
   opts = {},

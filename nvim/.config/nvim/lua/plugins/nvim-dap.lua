@@ -1,7 +1,7 @@
 return {
   {
     'mfussenegger/nvim-dap',
-    commit = '90616ae',
+    commit = 'cc92b05',
     config = function()
       local dap = require('dap')
 
@@ -47,7 +47,7 @@ return {
   },
   {
     'rcarriga/nvim-dap-ui',
-    commit = '1c351e4',
+    commit = 'ffa8983',
     dependencies = {
       'nvim-neotest/nvim-nio',
       commit = 'a428f30',
@@ -72,7 +72,7 @@ return {
   {
     -- JS debugger
     'microsoft/vscode-js-debug',
-    tag = 'v1.93.0',
+    tag = 'v1.95.3',
     build = 'npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out'
   },
   {

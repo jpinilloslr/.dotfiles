@@ -1,10 +1,10 @@
 return {
   'CopilotC-Nvim/CopilotChat.nvim',
-  tag = 'v2.14.1',
+  tag = 'v3.1.0',
   dependencies = {
     { 
       'nvim-lua/plenary.nvim',
-      commit = 'f4faa5a',
+      commit = '2d9b061',
     },
   },
   opts = {

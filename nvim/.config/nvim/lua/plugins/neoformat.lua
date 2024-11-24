@@ -1,7 +1,7 @@
 -- Requires black and prettier to be installed through Mason
 return {
   'sbdchd/neoformat',
-  commit = 'b3b3858',
+  commit = 'd9d3311',
   setup = function()
     vim.g.neoformat_enabled_python = { 'black' }
     vim.g.neoformat_enabled_javascript = { 'prettier' }

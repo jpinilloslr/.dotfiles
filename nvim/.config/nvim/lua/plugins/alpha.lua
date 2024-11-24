@@ -1,6 +1,6 @@
 return {
   'goolord/alpha-nvim',
-  commit = 'b6f4129',
+  commit = 'de72250',
   config = function()
     local status_ok, alpha = pcall(require, 'alpha')
     if not status_ok then

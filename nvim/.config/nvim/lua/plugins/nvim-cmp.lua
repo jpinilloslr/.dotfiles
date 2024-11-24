@@ -1,16 +1,16 @@
 return {
   -- Autocompletion
   'hrsh7th/nvim-cmp',
-  commit = 'ae644fe',
+  commit = 'be7bd4c',
   dependencies = {
     -- Snippet Engine & its associated nvim-cmp source
     {
       'L3MON4D3/LuaSnip',
-      commit = 'e808bee',
+      commit = '0f7bbce',
     },
     {
       'saadparwaiz1/cmp_luasnip',
-      commit = '05a9ab2'
+      commit = '98d9cb5'
     },
 
     -- Adds LSP completion capabilities
@@ -26,7 +26,7 @@ return {
     -- Adds a number of user-friendly snippets
     {
       'rafamadriz/friendly-snippets',
-      commit = '00ebcaa'
+      commit = 'de8fce9'
     }
   },
   config = function()

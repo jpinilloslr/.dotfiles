@@ -1,6 +1,6 @@
 return {
   'nvim-lualine/lualine.nvim',
-  commit = 'b431d22',
+  commit = '2a5bae9',
   opts = {
     options = {
       theme = 'tokyonight',

@@ -11,7 +11,7 @@ return {
     },
     {
       'williamboman/mason-lspconfig.nvim',
-      commit = '25c1185',
+      commit = '43894ad',
     },
     -- Automatically install formatters and other tools
     {
@@ -22,7 +22,7 @@ return {
     -- Useful status updates for LSP
     {
       'j-hui/fidget.nvim',
-      commit = 'd855eed',
+      commit = 'e2a175c',
       opts = {
         notification = {
           window = {

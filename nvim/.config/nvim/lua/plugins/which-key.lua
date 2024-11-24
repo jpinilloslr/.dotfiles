@@ -1,14 +1,14 @@
 return {
   'folke/which-key.nvim',
-  commit = 'bfec3d6',
+  commit = '68e37e1',
   dependencies = {
     {
       'nvim-tree/nvim-web-devicons',
-      commit = '9154484'
+      commit = 'f09be61'
     },
     {
       'echasnovski/mini.nvim',
-      commit = 'e50cf9d'
+      commit = 'ccfc630'
     }
   },
   config = function()
