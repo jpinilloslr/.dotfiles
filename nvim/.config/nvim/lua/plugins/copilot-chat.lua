@@ -2,7 +2,7 @@ return {
   'CopilotC-Nvim/CopilotChat.nvim',
   tag = 'v3.1.0',
   dependencies = {
-    { 
+    {
       'nvim-lua/plenary.nvim',
       commit = '2d9b061',
     },
@@ -10,7 +10,7 @@ return {
   opts = {
     question_header = '## Me ',
     answer_header = '## GLaDOS ',
-    auto_follow_cursor = false,
+    auto_follow_cursor = true,
     show_help = false,
     window = {
       layout = 'float',
