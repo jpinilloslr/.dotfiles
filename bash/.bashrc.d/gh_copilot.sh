@@ -1,4 +1,3 @@
-eval "$(gh copilot alias -- bash)"
 ghcs() {
 	TARGET="shell"
 	local GH_DEBUG="$GH_DEBUG"
@@ -76,9 +75,9 @@ ghcs() {
 	if GH_DEBUG="$GH_DEBUG" GH_HOST="$GH_HOST" gh copilot suggest -t "$TARGET" "$@" --shell-out "$TMPFILE"; then
 		if [ -s "$TMPFILE" ]; then
 			FIXED_CMD="$(cat $TMPFILE)"
-			history -s $(history 1 | cut -d' ' -f4-); history -s "$FIXED_CMD"
+			builtin history -s -- $(builtin history 1 | cut -d' ' -f4-); builtin history -s -- "$FIXED_CMD"
 			echo
-			eval "$FIXED_CMD"
+			eval -- "$FIXED_CMD"
 		fi
 	else
 		return 1
