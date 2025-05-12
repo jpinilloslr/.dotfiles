@@ -15,10 +15,10 @@ return {
         dap.set_breakpoint(vim.fn.input('Breakpoint condition: '))
       end, { desc = '[D]ebug Toggle [B]reakpoint With Condition' })
 
+      -- NodeJS
       local js_based_languages = { 'typescript', 'javascript', 'typescriptreact' }
-
       for _, language in ipairs(js_based_languages) do
-        require('dap').configurations[language] = {
+        dap.configurations[language] = {
           {
             type = 'pwa-node',
             request = 'launch',
@@ -43,6 +43,39 @@ return {
           }
         }
       end
+
+      -- Go
+      dap.adapters.go = function(callback, _)
+        local port = 38697
+        local handle
+        handle = vim.loop.spawn("dlv", {
+          args = { "dap", "-l", "127.0.0.1:" .. port },
+          detached = true,
+        }, function(code)
+          if handle then
+            handle:close()
+          end
+          print("Delve exited with code", code)
+        end)
+        vim.defer_fn(function()
+          callback({ type = "server", host = "127.0.0.1", port = port })
+        end, 100)
+      end
+
+      dap.configurations.go = {
+        {
+          type = "go",
+          name = "Debug",
+          request = "launch",
+          program = "${file}",
+        },
+        {
+          type = "go",
+          name = "Debug Package",
+          request = "launch",
+          program = "${fileDirname}",
+        },
+      }
     end
   },
   {
